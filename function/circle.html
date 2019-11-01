@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <h1>CIRCLE</h1>
+        <script>
+            function circle()
+            {
+                var radius,a;
+                radius=parseInt(document.getElementById("rad").value);
+                
+                a=2*radius;
+            
+                document.getElementById("dia").value=a;
+                b=(2*3.14)*radius;
+            
+                document.getElementById("circum").value=b;
+                c=(radius*radius)*3.14;
+                
+                document.getElementById("area").value=c;
+            }
+            </script>
+
+    </head>
+    <body>
+        Radius<input type="text" id="rad"></input>
+        <button onclick="circle()">enter</button><br><br>
+        diameter<input id="dia"></input>
+        circumferance<input id="circum"></input>
+        area<input id="area"></input>
+    </body>
+</html>

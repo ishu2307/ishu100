@@ -1,0 +1,24 @@
+
+<html>
+
+<body>
+    <h2>Reverse of All Natural Number</h2>
+    ENTER NUMBER:<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Enter</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER()
+        {
+        var i=1;
+        var n=document.getElementById("h1").value;
+        while(i<=n)
+        {
+            document.getElementById("demo").innerHTML+="<span>"+n+" "+"</span>";
+            n--;
+        }
+        }
+    </script>
+</body>
+
+</html>

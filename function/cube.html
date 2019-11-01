@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+        function cube()
+        {
+            a=document.getElementById("val1").value;
+           // console.log(a)
+            b=(a*a)*a;
+           // console.log(b)
+            document.getElementById("ans").value=b
+            //console.log(b);
+            document.write(b)
+        }
+        </script>
+    </head>
+    <body>
+        Enter the value<input type="text" id="val1">
+        <button onclick="cube()">cubic</button>
+        <p id="ans"></p>
+    </body>
+</html>

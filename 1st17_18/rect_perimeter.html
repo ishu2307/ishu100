@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script >
+        
+        // function area(length, width) {
+        //     a= length * width;
+        //     console.log("area")
+        //     document.getElementById("area").value=a  
+        // }
+        function perimeter() {
+            var length,width,b,a;
+            length=parseInt(document.getElementById("len").value);
+            width=parseInt(document.getElementById("wid").value);
+            b=2*(length + width);
+            // b=2*a;
+            // console.log("perim")
+            document.getElementById("peri").value=b;
+        }
+
+    </script>
+</head>
+<body>
+length<input type="text" id="len"></input>&nbsp;&nbsp;
+width<input type="text" id="wid"></input><br><br>
+   <button onclick="perimeter()">perimeter</button><br><br>
+    
+    perimeter of a rectangle<input id="peri"></input>
+</body>
+</html>

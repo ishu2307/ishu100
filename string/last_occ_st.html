@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h2>Last string Occurance</h2>
+    Enter String<br><br>
+    <input id="h1" type="text"><br><br>
+    Search String<br><br>
+    <input id="h2" type="text"><br><br>
+    <button onClick="OCCUR()">LAST-OCCURANCE</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function OCCUR() 
+        {
+            var str = document.getElementById("h1").value;
+            var search=document.getElementById("h2").value;
+            var ocr=str.lastIndexOf(search);
+            document.getElementById("demo").innerHTML="OCCURANCE  :"+ocr;
+                    
+        }
+    </script>
+</body>
+
+</html>

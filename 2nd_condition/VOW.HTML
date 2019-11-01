@@ -1,0 +1,26 @@
+<html>
+    <head>
+       <h3> find among numbers</h3>
+    </head>
+    <script>
+    function number()
+    {
+        num=document.getElementById("val1").value;
+        
+        if((num=='a')||(num=='e')||(num=='i')||(num=='o')||(num=='u')||(num=='A')||(num=='E')||(num=='I')||(num=='O')||(num=='U'))
+        {
+            document.write("Given is vowel")
+        }
+        
+        else
+        {
+            document.write("Given is consonent")
+        }
+    }
+    </script>
+    <body>
+        Enter A value<input type="text" id="val1">
+        
+        <button onclick="number()">find</button>
+    </body>
+</html>

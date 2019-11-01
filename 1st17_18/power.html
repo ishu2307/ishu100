@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <h3>power value</h3>
+    </head>
+    <script>
+        function power(x,y){
+        var x,y;
+        x=parseInt(document.getElementById("a").value);
+        y=parseInt(document.getElementById("b").value);
+        
+        document.getElementById("ans").value=Math.pow(x,y);
+        }
+        </script>
+    <body>
+        Enter value of x<input type='text' id="a"></input>
+        Enter value of y<input type="text" id="b"></input>
+        <button onclick="power()">enter</button><br><br>
+        power value <input id="ans"></input>
+    </body>
+</html>

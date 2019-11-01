@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script>
+
+        function arithmetic() {
+            var a, b, c,d,e,f,g;
+            a = parseInt(document.getElementById('val1').value);
+            b = parseInt(document.getElementById('val2').value);
+            c = a + b;
+            document.getElementById("add").value = c;
+            d = a - b;
+            document.getElementById("sub").value = d;
+            e = a * b;
+            document.getElementById("mult").value = e;
+            f = a / b;
+            document.getElementById("div").value = f;
+            g = a % b;
+            document.getElementById("mod").value = g;
+
+        }
+    </script>
+</head>
+
+<body>
+
+    Enter the first value <input type="text" id="val1"></input><br><br>
+    Enter the second value <input type="text" id="val2"></input><br><br>
+    <button onclick="arithmetic()">add/sub/mul/div/mod</button><br>
+    
+
+    Addition of first and second value <input id="add"></input><br><br>
+    subtraction of first and second value <input id="sub"></input><br><br>
+    multiplication of first and second value <input id="mult"></input><br><br>
+    division of first and second value <input id="div"></input><br><br>
+    modulus of first and second value <input id="mod"></input><br><br>
+
+</body>
+
+
+</html>

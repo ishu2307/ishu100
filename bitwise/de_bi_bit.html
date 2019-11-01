@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <h2>Decimal to Binary Bitwise</h2>
+    Enter Number<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Click</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() 
+        {
+            var value = parseInt(document.getElementById("h1").value);
+            var bin=(value>>>0).toString(2);
+            document.getElementById("demo").innerHTML=+bin;
+                    
+        }
+    </script>
+</body>
+
+</html>

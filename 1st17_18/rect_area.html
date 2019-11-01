@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script >
+        
+        function area()
+         {
+             var length,width,a;
+             length=parseInt(document.getElementById("len").value);
+             width=parseInt(document.getElementById("wid").value);
+            a=(length * width);
+            console.log("area")
+            document.getElementById("area").value=a  
+        }
+        // function perimeter() {
+        //     var length,width,b;
+        //     length=parseInt(document.getElementById("len").value);
+        //     width=parseInt(document.getElementById("wid").value);
+        //     b=2*(length + width);
+            
+        //     console.log("perim")
+        //     document.getElementById("peri").value=b;
+        // }
+
+    </script>
+</head>
+<body>
+length<input type="text" id="len"></input>&nbsp;&nbsp;
+width<input type="text" id="wid"></input><br><br>
+   <button onclick="area()">Area</button><br><br>
+    
+    Area of a rectangle<input id="area"></input>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head><h3>Binary to octal</h3></head>
+    
+    <script>
+ function bioc()
+    
+        
+     {
+        
+        binary=document.getElementById("val1").value;
+        //console.log(binary)
+        
+         var octal = parseInt(binary, 2).toString(8);
+        
+        //console.log(octal)
+        document.getElementById("ans").value=octal;
+        document.write(octal)
+     }
+    </script>
+    <body>
+        Enter binary value<input type="text" id="val1">
+        <button onclick="bioc()">convert</button>
+        <p id="ans"></p>
+    </body>
+</html>

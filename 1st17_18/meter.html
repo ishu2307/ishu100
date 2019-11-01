@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function length()
+            {
+                var centi,a;
+                centi=document.getElementById("cen").value;
+                a=centi/100.0;
+                document.getElementById("cm").value=a;
+                b=centi/100000.0;
+                document.getElementById("km").value=b;
+            }
+            </script>
+    </head>
+    <body>
+        centimeter<input type ="text" id="cen">
+        <button onclick="length()">enter</button><br></br>
+        meter<input id="cm"></input>
+        kilometer<input id="km"></input>
+    </body>
+</html>

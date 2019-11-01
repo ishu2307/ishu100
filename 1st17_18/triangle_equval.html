@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <h3>Area of Equivalent Triangle</h3>
+    </head>
+    <script>
+    function Triangleequi()
+    {
+        sides=parseInt(document.getElementById("side").value);
+        area=(Math.sqrt(3)/4)*(sides*sides);
+        document.getElementById("ans").value=area;
+    }
+    </script>
+    <body>
+        Enter side of the Triangle<input type="text" id="side"></input>
+    
+        <button onclick="Triangleequi()">Enter</button><br><br>
+        Area of the equivalent Triangle<input id="ans"></input>
+    </body>
+</html>

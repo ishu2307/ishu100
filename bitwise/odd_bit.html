@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <h2> Even or Odd Bitwise</h2>
+    Enter Number<input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Enter</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var num1 = parseInt(document.getElementById("h1").value);
+            if (num1 & 1) {
+                document.getElementById("demo").innerHTML = num1 + " odd number";
+            }
+            else {
+                document.getElementById("demo").innerHTML = num1 + " even number"
+            }
+        }
+    </script>
+</body>
+
+</html>

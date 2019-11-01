@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <h2> Trailing and leading </h2>
+    Enter string:<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="REMOVE()">Space</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function REMOVE() 
+        {
+            var str = document.getElementById("h1").value;
+            str=str.replace(/^\s+|\s+$/g, '');
+            document.getElementById("demo").innerHTML="Remove Space:"+str;
+                    
+        }
+    </script>
+</body>
+
+</html>

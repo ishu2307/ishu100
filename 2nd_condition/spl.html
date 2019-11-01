@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2 >Analysis</h2>
+        ENTER CHARACTER: <input type="text" id="h1"><br><br>
+        <button onClick="CHECK()">CHECK</button><br><br>
+        <div id="demo" ></div>
+        <script>
+            function CHECK()
+            {
+             var input=document.getElementById("h1").value;
+             var alpha=/^[A-Za-z]+$/;
+             var special=/^[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
+             var numb=/^[0-9]*$/;
+             if(input.match(alpha))
+             {
+                 document.getElementById("demo").innerHTML="<span style='color:red'>"+input+"</span>: IS AN ALPHABET";
+             }
+             else if(input.match(special))
+             {
+                document.getElementById("demo").innerHTML="<span style='color:red'>"+input+"</span>: IS A SPECIAL CHARACTER";
+             }
+             else{
+                document.getElementById("demo").innerHTML="<span style='color:red'>"+input+"</span>: IS A DIGITS";
+             }
+            }
+        </script>
+    </body>
+</html>

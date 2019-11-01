@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <h2 style="color:rgb(143, 23, 113)">CONVERT</h2>
+       Enter-Days:<input id="h1"type="text"><br><br>
+        <button onClick="YEARS()">YEARS</button>
+        <button onClick="WEEKS()">WEEKS</button>
+        <button onClick="DAYS()">DAYS</button>
+       
+        <div id="two" style="color:rgb(223, 97, 191);"></div>
+            <script>
+                
+            function YEARS()
+            {
+                var Day =document.getElementById("h1").value;
+                var YEAR=Day/365 ;
+                document.getElementById("two").innerHTML="<h3>Years  : "+"<span style='color:red;'>"+YEAR+"</span>"+"</h3><br>";
+            }
+            function WEEKS()
+            {
+                var Day =document.getElementById("h1").value;
+                var WEEK=Day/7 ;
+                document.getElementById("two").innerHTML="<h3>Weeks  : "+"<span style='color:red;'>"+WEEK+"</span>"+"</h3><br>";
+            }
+            function DAYS()
+            {
+                var Day =document.getElementById("h1").value;
+                document.getElementById("two").innerHTML="<h3>Days  : "+"<span style='color:red;'>"+Day+"</span>"+"</h3><br>";
+            }
+            
+            
+            </script>
+    </body>
+

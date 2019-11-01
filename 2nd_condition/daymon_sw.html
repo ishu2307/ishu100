@@ -1,0 +1,55 @@
+  
+<html>
+    <body>
+        <h2>days of week switch</h2>
+        Enter number from 0 to 6<input type="text" id="h1"><br><br>
+        <button onClick="DAY()"> day</button><br><br>
+        <div id="demo"></div>
+        <script>
+            function DAY()
+            {
+               var choice=parseInt(document.getElementById("h1").value);
+               
+                switch(choice)
+                {
+                    case 0:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span>sunday</span>";
+                        break;
+                    
+                    case 1:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span>monday</span>";
+                        break;
+                    
+                    case 2:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span>tuesday</span>";
+                        break;
+                    
+                    case 3:
+                        document.getElementById("demo").innerHTML="DAY : <span>wednesday</span>";
+                        break;
+                    
+                    case 4:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span>thursday</span>";
+                        break;
+                    
+                    case 5:
+                    
+                        document.getElementById("demo").innerHTML="DAY : <span>friday</span>";
+                        break;
+                    
+                    case 6:
+                
+                        document.getElementById("demo").innerHTML="DAY : <span>saturday</span>";
+                        break;
+                    
+                    default:
+                    
+                                 }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>Hcf</head>
+    <script>
+    function HCF()
+    {
+        m=parseInt(document.getElementById("val1").value);
+        n=parseInt(document.getElementById("val2").value);
+        // m=a;
+        // console.log(m)
+        // n=b;
+        // console.log(n)
+        // m=m-n
+        //         console.log(m)
+        while(m!=n)
+        {
+            if(m>n)
+            {
+                m=m-n;
+                //console.log(m)
+            }
+            else
+            {
+                n=n-m
+               // console.log(n)
+            }
+            console.log(n)
+            document.write(m)
+            
+       }
+
+        
+    }
+    </script>
+    <body>
+        enter value 1<input type="text" id="val1">
+        enter value2<input type="text" id ="val2">
+        <button onclick="HCF()">HCF</button>
+        <p id="ans"></p>
+    </body>
+</html>

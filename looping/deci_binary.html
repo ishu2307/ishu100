@@ -1,0 +1,25 @@
+<html>
+    <head><h3>
+        decimal to binary
+    </h3>
+        <script>
+            function convert()
+            {
+            var dn=document.getElementById("val1").value;
+            console.log(dn)
+            //var dn=10;
+            var binary=parseInt(dn,10).toString(2);
+            document.getElementById("ans").value=binary;
+        console.log(binary)
+        document.write(binary)
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="val1"></input>
+        <button onclick="convert()">convert</button>
+        <p id="ans"></p>
+    </body>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <h3>
+         Simple Intrest
+        </h3>
+    </head>
+    <script>
+    function simpleintrest()
+    {
+        var p,t,r;
+        p=parseInt(document.getElementById("val1").value);
+        t=parseInt(document.getElementById("val2").value);
+        r=parseInt(document.getElementById("val3").value);
+        
+        SI=(p*t*r)/100;
+        document.getElementById("total").value=SI;
+        
+    }
+    </script>
+    <body>
+        Enter Principle<input type="text" id="val1"><br><br>
+        Enter Time<input type="text" id="val2"><br><br>
+        Enter Rate<input type="text" id="val3"><br><br>
+        
+        <button onclick="simpleintrest()">Amount</button><br><br>
+    
+       Simple Intrest<input id="total"></input>
+
+
+    </body>
+</html>

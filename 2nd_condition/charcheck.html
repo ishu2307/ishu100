@@ -1,0 +1,24 @@
+  
+<html>
+    <body>
+        <h2>number or character</h2>
+        ENTER CHARACRTER: <input type="text" id="h1"><br><br>
+        <button onClick="CHECK()">CHECK</button><br><br>
+        <div id="demo"></div>
+        <script>
+            function CHECK()
+            {
+             var char = /^[A-Za-z]+$/;
+             var input=document.getElementById("h1").value;
+             if(input.match(char))
+             {
+                 document.getElementById("demo").innerHTML="Yes Character"
+             }
+             else
+             {
+                document.getElementById("demo").innerHTML="Not a Character";
+             }
+            }
+        </script>
+    </body>
+</html>

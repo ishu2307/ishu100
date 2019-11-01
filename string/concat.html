@@ -1,0 +1,17 @@
+<html>
+        <script>
+                function letter() 
+                {
+                  character1=document.getElementById("str1").value;
+                  character2=document.getElementById("str2").value
+                  string = character1+character2;
+                  document.getElementById("ans").value = string;
+                }
+                </script>
+<body>
+  enter first string <input type="text" id="str1"></input>
+   enter second string <input type="text" id="str2"></input>
+<button onclick="letter()">concat</button>
+<p id="ans"></p>
+</body>
+</html>

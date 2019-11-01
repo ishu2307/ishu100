@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2>uppercase or lowercase</h2>
+        ENTER ALPHABET: <input type="text" id="h1"><br><br>
+        <button onClick="CHECK()">CHECK</button><br><br>
+        <div id="demo"></div>
+        <script>
+            function CHECK()
+            {
+             var input=document.getElementById("h1").value;
+             if(input==input.toUpperCase())
+             {
+                 document.getElementById("demo").innerHTML="<span style='color:red'>"+input+"</span>:IS UPPER CASE";
+             }
+             else{
+                document.getElementById("demo").innerHTML="<span style='color:red'>"+input+"</span>: IS LOWER CASE";
+             }
+            }
+        </script>
+    </body>
+</html>

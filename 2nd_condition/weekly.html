@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2>weekday</h2>
+        Enter number within 7<input type="text" id="h1" >
+        <button onClick="ENTER()">ENTER</button><br><br>
+        <div id="demo"></div>
+        <script>
+        function ENTER()
+        {
+            var input=document.getElementById("h1").value;
+            var weekday = new Array(7);
+            weekday[0]="SUNDAY";
+            weekday[1]="MONDAY";
+            weekday[2]="TUESDAY";
+            weekday[3]="WEDNESDAY";
+            weekday[4]="THURSDAY";
+            weekday[5]="FRIDAY";
+            weekday[6]="SATURDAY";
+            var day=weekday[input];
+            document.getElementById("demo").innerHTML="<span><h3>"+day+"</h3></span>";
+        }
+        </script>
+    </body>
+</html

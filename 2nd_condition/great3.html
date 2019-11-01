@@ -1,0 +1,30 @@
+<html>
+    <head>
+       <h3> greater of 2 number</h3>
+    </head>
+    <script>
+    function great()
+    {
+        a=document.getElementById("val1").value;
+        b=document.getElementById("val2").value;
+        c=document.getElementById("val3").value;
+        if(a>b && a>c)
+        {
+            document.write("A is greater")
+        }
+        else if (b>a && b>c) {
+            document.write("B is greater")
+        } 
+        else
+        {
+            document.write("C is greater")
+        }
+    }
+    </script>
+    <body>
+        Enter A value<input type="text" id="val1">
+        Enter B value<input type="text" id="val2">
+        Enter C value<input type="text" id="val3">
+        <button onclick="great()">find</button>
+    </body>
+</html>

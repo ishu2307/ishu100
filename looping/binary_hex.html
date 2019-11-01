@@ -1,0 +1,22 @@
+<html>
+    <head><h3>Binary to hexadecimal</h3></head>
+    
+    <script>
+ function bioc()  
+     {
+        
+        binary=document.getElementById("val1").value;
+        console.log(binary)
+        
+       var hex= parseInt(binary, 2).toString(8).toUpperCase(); 
+        console.log(hex)
+        document.getElementById("ans").value=hex;
+        document.write(hex)
+     }
+    </script>
+    <body>
+        Enter binary value<input type="text" id="val1">
+        <button onclick="bioc()">convert</button>
+        <p id="ans"></p>
+    </body>
+</html>

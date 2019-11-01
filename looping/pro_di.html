@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <h2>PRODUCT OF  DIGITS</h2>
+    Enter Number
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Product</button><br><br>
+    <div id="demo" ></div>
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var rem=1;
+            while(n)
+            {
+            rem*=n%10;
+            var n=Math.floor(n/10);
+            document.getElementById("demo").innerHTML = "Sum of Digits: <span style='color:red'>"+parseInt(rem)+"</span>";
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

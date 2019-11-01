@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <h3>Area of Triangle</h3>
+    </head>
+    <script>
+    function Trianglebh()
+    {
+        a=parseInt(document.getElementById("base").value);
+        b=parseInt(document.getElementById("height").value);
+        c=((a*b)/2);
+        document.getElementById("ans").value=c;
+    }
+    </script>
+    <body>
+        Enter base<input type="text" id="base"></input>
+        Enter height<input type="text" id="height"></input>
+        <button onclick="Trianglebh()">Enter</button><br><br>
+        Area<input id="ans"></input>
+    </body>
+</html>

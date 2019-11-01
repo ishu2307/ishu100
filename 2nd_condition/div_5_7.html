@@ -1,0 +1,26 @@
+<html>
+    <head>
+       <h3> find among numbers</h3>
+    </head>
+    <script>
+    function number()
+    {
+        num=document.getElementById("val1").value;
+        
+        if((num%5==0) && (num%7==0))
+        {
+            document.write("Given number is divisible by 5 and 7")
+        }
+        
+        else
+        {
+            document.write("Given number is not divisible by 5 and 7")
+        }
+    }
+    </script>
+    <body>
+        Enter A value<input type="text" id="val1">
+        
+        <button onclick="number()">find</button>
+    </body>
+</html>

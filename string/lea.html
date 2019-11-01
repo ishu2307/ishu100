@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <h2> REMOVE LEADING SPACE IN  STRING </h2>
+    Enter string     <input id="h1" type="text"><br><br>
+    <button onClick="REMOVE()">remove_leden</button><br><br>
+    <div id="demo"></div>
+    <script>
+
+        function REMOVE() 
+        {
+            var str = document.getElementById("h1").value;
+            str=str.replace(/^\s+/g, "");
+            document.getElementById("demo").innerHTML="Remove extra space:"+str;
+                    
+        }
+
+
+    </script>
+</body>
+
+</html>

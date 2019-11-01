@@ -1,0 +1,24 @@
+  
+<html>
+
+<body>
+    <h2>Natural Numbers</h2>
+    Enter  number
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Enter</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER()
+        {
+        var i=1;
+        var n=document.getElementById("h1").value;
+        while(i<n)
+        {
+            document.getElementById("demo").innerHTML+="<span>"+i+" "+"</span>";
+            i++;
+        }
+        }
+    </script>
+</body>
+
+</html>

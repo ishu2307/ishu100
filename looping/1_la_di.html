@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h2>First and Last Digit</h2>
+    Enter Number
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Enter</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var lnum=n%10;
+            while(n>10)
+            {
+            var n=Math.floor(n/10);
+            
+            }
+            document.getElementById("demo").innerHTML = "First Digit:"+n+"<br><br>"+
+            "Last Digit :"+lnum;
+            
+        }
+    </script>
+</body>
+
+</html>

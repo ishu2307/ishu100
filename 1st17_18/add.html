@@ -1,0 +1,29 @@
+<html>
+    <head>
+            <script>
+                    
+                     function addition()
+                        {
+                            var a,b,c
+                        a=parseInt(document.getElementById('val1').value);
+                         b=parseInt(document.getElementById('val2').value);
+                        c=a+b;
+                       
+                        document.getElementById("add").value=c;
+                        console.log("add")
+                     }
+                    </script>
+                    </head>
+
+<body>
+        
+        Enter the first value    <input type="text" id="val1" ></input><br><br>
+        Enter the second value    <input type="text" id="val2" ></input><br><br>
+        <button onclick="addition()">add</button><br><br>
+
+        <input id="add"></input>
+            
+        </body>
+        
+    
+</html>

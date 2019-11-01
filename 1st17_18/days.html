@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <h1>CIRCLE</h1>
+        <script>
+            function calender()
+            {
+                var days,years,weeks;
+                days=parseInt(document.getElementById("day").value);
+               //yr 
+                years=(days/365);
+                document.getElementById("years").value=years;
+               //week 
+                weeks=((days%365)/7);
+                document.getElementById("weeks").value=weeks;
+                //day
+                days=(days-((years*365)+(weeks*7)));
+                document.getElementById("days").value=days;
+            }
+            </script>
+
+    </head>
+    <body>
+        days<input type="text" id="day"></input>
+        <button onclick="calender()">enter</button><br><br>
+        Year<input id="years"></input>
+        Weeks<input id="weeks"></input>
+        Days<input id="days"></input>
+    </body>
+</html>

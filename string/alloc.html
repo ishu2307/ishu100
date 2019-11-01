@@ -1,0 +1,30 @@
+<html>
+
+<body>
+    <h2>All OCCURANCE </h2>
+    Enter String
+    <input id="h1" type="text"><br><br>
+Search String<br><br>
+    <input id="h2" type="text"><br><br>
+    <button onClick="OCCUR()">enter</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function OCCUR() 
+        {
+            var str = document.getElementById("h1").value;
+            var search=document.getElementById("h2").value;
+            var allocr=[];
+            for(var i=0;i<str.length;i++)
+            {
+                if(str[i]===search)
+                {
+                allocr.push(i);
+                }
+            }
+            document.getElementById("demo").innerHTML=search+"  OCCURANCE AT:"+allocr;
+                    
+        }
+    </script>
+</body>
+
+</html>

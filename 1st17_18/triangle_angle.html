@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <h3>3rd Angle Triangle</h3>
+    </head>
+    <script>
+    function Triangle()
+    {
+        Angle1=parseInt(document.getElementById("ag1").value);
+        Angle2=parseInt(document.getElementById("ag2").value);
+        Angle3=(180-(Angle1+Angle2))
+        document.getElementById("ans").value=Angle3;
+    }
+    </script>
+    <body>
+        Enter Angle1<input type="text" id="ag1"></input>
+        Enter Angle2<input type="text" id="ag2"></input>
+        <button onclick="Triangle()">Enter</button><br><br>
+        Third Angle<input id="ans"></input>
+    </body>
+</html>

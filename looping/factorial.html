@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function Factorial()
+{
+var i, no, fact;
+fact=1;
+no=Number(document.getElementById("val1").value);
+for(i=1; i<=no; i++)  
+{
+fact= fact*i;
+}  
+document.getElementById("ans").value= fact;
+document.write(fact)
+}
+</script>
+</head>
+<body>
+ <input id="val1">
+<button onclick="Factorial()">Factorial</button>
+<p id="ans">
+</body>
+</html>

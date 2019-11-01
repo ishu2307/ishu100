@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <h3>
+         Compound Intrest
+        </h3>
+    </head>
+    <script>
+    function compoundintrest()
+    {
+        var p,t,r;
+        p=parseInt(document.getElementById("val1").value);
+        t=parseInt(document.getElementById("val2").value);
+        r=parseInt(document.getElementById("val3").value);
+        
+        CI=(p* (Math.pow((1 + r / 100), t)));
+        document.getElementById("total").value=CI;
+        
+    }
+    </script>
+    <body>
+        Enter Principle<input type="text" id="val1"><br><br>
+        Enter Time<input type="text" id="val2"><br><br>
+        Enter Rate<input type="text" id="val3"><br><br>
+        
+        <button onclick="compoundintrest()">Amount</button><br><br>
+    
+       Compound Intrest<input id="total"></input>
+
+
+    </body>
+</html>
